@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=crome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        *
+        {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        header a, header h1, header h4
+        {
+            margin: 0 0 0 30px;
+        }
+        header hr
+        {
+            margin: 0 0 0 0;
+            border: black 2px solid;
+        }
+        header img.logo
+        {
+            height: 150px;
+        }
+        main h1, main h3, main input, main button
+        {
+            margin: 0 0 0 30px;
+        }
+        h1
+        {
+            font-size: 50px;
+        }
+        h4
+        {
+            font-size: 25px;
+        }
+        h3
+        {
+            font-size: 20px;
+        }
+        main input
+        {
+            font-size: 19px;
+        }
+        main button
+        {
+            font-size: 16.5px;
+        }
+        main button.submit
+        {
+            color: white;
+            text-align: center;
+            border: hidden;
+            background-color: rgb(20, 196, 178);
+            border-radius: 5px;
+            width: 240px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class=logo src="img/logo2.png"></a>
+        <h1>회원가입</h1>
+        <h4>Home 보드게임카페에 오신것을 환영합니다.</h4>
+        <br>
+        <hr>
+        <br>
+    </header>
+    <main>
+        <h1>회원정보</h1>
+        <h3>아이디</h3>
+        <input class="id" type="text" name="id" value="아이디를 입력하세요." onfocus="if(this.value=='아이디를 입력하세요.')this.value='';" onblur="if(this.value=='')this.value='아이디를 입력하세요.';" style="float: left;">
+        <button class="overlap">중복확인</button>
+        <br>
+        <h3>비밀번호</h3>
+        <input class="password" type="password" name="passwd" value="password" onfocus="if(this.value=='password')this.value='';" onblur="if(this.value=='')this.value='password';">
+        <h3>비밀번호 확인</h3>
+        <input class="password_check" type="password" name="password_check" value="password" onfocus="if(this.value=='password')this.value='';" onblur="if(this.value=='')this.value='password';">
+        <h3>닉네임</h3>
+        <input class="nickname" type="text" name="nickname" value="닉네임을 입력하세요." onfocus="if(this.value=='닉네임을 입력하세요.')this.value='';" onblur="if(this.value=='')this.value='닉네임을 입력하세요.';">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="submit" type="submit">가입하기</button>
+    </main>
+</body>
+</html>

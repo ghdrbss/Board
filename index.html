@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=crome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME 보드게임카페</title>
+    <style>
+        *
+        {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            color: white;
+        }
+        body
+        {
+            background-color: black;
+        }
+        body img#logo
+        {
+            width: 700px;
+            height: 350px;
+            margin: 70px 0 0 450px;
+        }
+        table tr td .id, table tr td .passwd
+        {
+            color: black;
+            width: 640px;
+            height: 66px;
+            font-size: 30px;
+            padding: 0 0 0 20px;
+        }
+        table tr td button
+        {
+            color: black;
+            width: 331px;
+            height: 66px;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        table
+        {
+            border: red 4px dashed;
+            margin: 10px 0 0 460px;
+            width: 670px;
+            padding: 10px 10px 10px 10px;
+        }
+        table tr td h1
+        {
+            text-align: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"><img id="logo" src="img/logo.png"></a>
+    <table>
+        <tr>
+            <td colspan="2" class="login"><h1>LOGIN</h1></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input class="id" type="text" name="id" value="아이디" onfocus="if(this.value=='아이디')this.value='';" onblur="if(this.value=='')this.value='아이디';"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input class="passwd" type="password" name="passwd" value="password" onfocus="if(this.value=='password')this.value='';" onblur="if(this.value=='')this.value='password';"></td>
+        </tr>
+        <tr>
+            <td><button>로그인</button></td>
+            <td><button onclick="location.href='sub.html'">회원가입</button></td>
+        </tr>
+    </table>
+</body>
+</html>
